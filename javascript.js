@@ -10,3 +10,5 @@
       ring.style.transform = `translate(${x - 30}px, ${y - 30}px)`;
     });
   });
+
+  

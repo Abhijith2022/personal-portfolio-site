@@ -349,7 +349,10 @@ span {
   font-size: 15px;
   line-height: 1.6;
 }
-
+.projectStyletext{
+  font-size: 17px;color: #94a3b8;white-space: pre-line;
+  margin: 2%;
+}
 .icon {
   font-size: 22px;
   margin-right: 8px;
@@ -375,6 +378,9 @@ span {
     transform: scale(1.1);
     background: linear-gradient(45deg, #00f7ff22, #ff00ff22);
     box-shadow: 0 0 77px #32b2eb5e;
+}
+.card:hover.card h3{
+  text-decoration-line: underline;
 }
 @media (max-width: 768px) {
   .container {
@@ -408,6 +414,9 @@ span {
   .card p {
     font-size: 1.5rem;
   }
+  .projectStyletext{
+  font-size: 1.5rem
+}
 
   /* Hide connectors on mobile */
   .right-cen::before,

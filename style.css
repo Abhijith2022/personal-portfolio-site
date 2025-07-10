@@ -11,7 +11,7 @@
 }
 .hamburger {
   display: none;
-  font-size: 28px;
+  font-size: 35px;
   cursor: pointer;
 }
 @media (max-width: 995px) {

@@ -4,25 +4,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#00f7ff;>
+  <meta name="theme-color" content="#00f7ff;">
   <title>Porfolio</title>
   <link rel="icon" type="image/x-icon" href="images/logo.png">
   <link href="./style.css" type="text/css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
 
+  <style>
+    body {
+      font-family: 'Fira Code', monospace;
+    }
+  </style> -->
 </head>
 
 <body>
 
   <header>
     <a href="#" class="logo"> Portfolio </a>
-    <nav>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <nav id="navMenu">
       <a href="#" class="active"> Home</a>
       <a href="#experience">Experience</a>
       <a href="#Skills">Skills</a>
       <a href="#Education">Education</a>
       <a href="./CV/RE_SU_ME_2_72.pdf" target="_blank">Download CV</a>
     </nav>
+
   </header>
 
   <div class="cursor-glow"></div>
@@ -32,11 +40,10 @@
       <img src="./images/second.png" alt="My picture" />
     </div>
     <div class="home-content">
-      <h1>Hi Iam <span>Abhijith</span></h1>
-      <h3 class="typing-text">I am a <span></span></h3>
-      <p>
-        If u know about me just search my name in google and come to me Here
-        iam
+      <h1>Hi, I'm <span>Abhijith</span></h1>
+      <h3 class="typing-text">I'm a <span></span></h3>
+      <p style="font-size: .7vw;">
+        You Can Google me - My work speakes louder than Words
       </p>
       <div class="socialMedia">
         <a href="https://www.linkedin.com/in/abhijithea1portal" target="_blank"><i class="fa-brands fa-linkedin">
@@ -47,7 +54,7 @@
         <a href="#"><i class="fa-brands fa-instagram"> </i></a>
       </div>
       <a href="mailto:abhijithea1@gmail.com?subject=Hiring Inquiry&body=Hi, I saw your portfolio and would like to discuss a job opportunity."
-        class="hireBtn">Hire me</a>
+        class="hireBtn">Bring Me On Board</a>
     </div>
   </section>
   <!-- Second page for education -->
@@ -75,7 +82,7 @@
       <div class="timeline-item">
         <!-- <div class="timeline-icon">👨‍💻</div> -->
         <div class="timeline-content">
-          <h3>Intern –MEAN Stack developer</h3>
+          <h3>Intern – MEAN Stack developer</h3>
           <span class="company">Inmakes solution</span>
           <span class="duration">Jan 2025 – On going </span>
           <ul>

@@ -261,7 +261,7 @@ span {
   content: "";
   inset: 1px;
   border-radius: inherit;
-  background-image: conic-gradient(#de0000,#11d8a6, #0d00ff, #00f6fe);
+  background-image: conic-gradient(#de0000, #11d8a6, #0d00ff, #00f6fe);
   animation: rotate 3s linear infinite;
 }
 
@@ -337,14 +337,14 @@ span {
 }
 
 .card {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid #334155;
-    padding: 24px 28px;
-    border-radius: 16px;
-    box-shadow: 0 0 135px #00f7ff22;
-    transition: transform 0.3s ease, background 0.5s ease-in-out;
-    width: auto;
-    min-height: 30vh;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #334155;
+  padding: 24px 28px;
+  border-radius: 16px;
+  box-shadow: 0 0 135px #00f7ff22;
+  transition: transform 0.3s ease, background 0.5s ease-in-out;
+  width: auto;
+  min-height: 30vh;
 }
 
 .card h3 {
@@ -360,8 +360,10 @@ span {
   font-size: 15px;
   line-height: 1.6;
 }
-.projectStyletext{
-  font-size: 17px;color: #94a3b8;white-space: pre-line;
+.projectStyletext {
+  font-size: 17px;
+  color: #94a3b8;
+  white-space: pre-line;
   margin: 2%;
 }
 .icon {
@@ -386,11 +388,11 @@ span {
 }
 
 .card:hover {
-    transform: scale(1.1);
-    background: linear-gradient(45deg, #00f7ff22, #ff00ff22);
-    box-shadow: 0 0 77px #32b2eb5e;
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #00f7ff22, #ff00ff22);
+  box-shadow: 0 0 77px #32b2eb5e;
 }
-.card:hover.card h3{
+.card:hover.card h3 {
   text-decoration-line: underline;
 }
 @media (max-width: 768px) {
@@ -425,9 +427,9 @@ span {
   .card p {
     font-size: 1.5rem;
   }
-  .projectStyletext{
-  font-size: 1.5rem
-}
+  .projectStyletext {
+    font-size: 1.5rem;
+  }
 
   /* Hide connectors on mobile */
   .right-cen::before,
@@ -435,8 +437,6 @@ span {
     display: none;
   }
 }
-
-
 
 /* Third Page CSS */
 
@@ -812,4 +812,86 @@ span {
   margin-top: 3rem;
   font-size: 1.3rem;
   color: #666;
+}
+
+/* Works showcase */
+
+.works-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.work-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  width: 220px;
+  transition: transform 0.2s;
+}
+
+.work-card:hover {
+  transform: scale(1.05);
+}
+
+.work-card img {
+  width: 102%;
+  height: 100px;
+  transform: translate(-4px, 3px);
+}
+
+.work-card button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  background: #0d0d0d;
+  color: #00f7ff;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 3.2vh;
+  font-family: "poppins";
+}
+
+.work-card button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #4b8fe3, #9c119c22);
+  box-shadow: 0 0 77px #00b0ff;
+  color: black;
+}
+
+/* Iframe container */
+.iframe-container {
+  display: none;
+  margin-top: 40px;
+  position: relative;
+  width: 100%;
+  background: white;
+}
+
+.iframe-container iframe {
+  width: 100%;
+  height: 600px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+}
+
+.close-btn {
+  position: absolute;
+  right: 10px;
+  top: -40px;
+  background: #00f7ffd9;
+  border: none;
+  color: #ff0000;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background: #be4343;
+    color: white;
 }

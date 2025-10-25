@@ -33,3 +33,15 @@
       });
     });
   });
+
+    function openWork(url) {
+    document.getElementById("iframeContainer").style.display = "block";
+    document.getElementById("workIframe").src = url;
+    // Optionally scroll to iframe
+    document.getElementById("iframeContainer").scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function closeWork() {
+    document.getElementById("iframeContainer").style.display = "none";
+    document.getElementById("workIframe").src = "";
+  }

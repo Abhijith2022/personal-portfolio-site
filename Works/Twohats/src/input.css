@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+body {
+  background-image: url("images/Line@2x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+}
+
+.secondSectionbg {
+  background-image: url("images/Mask group.png");
+}
+.bg-orange-color {
+  background-color: #ff9257;
+}
+.text-orange-custom {
+  color: #ff9257;
+}
+.right-wrapper {
+  @apply w-full py-10 lg:w-4/12 h-lvh bg-amber-400 grid grid-cols-2 grid-rows-3 gap-5 p-4;
+  background: url("images/bg_1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.custom-rounded {
+  border-radius: 0.75rem; /* from rounded-xl */
+  border-top-right-radius: 9999px; /* from rounded-tr-full */
+}

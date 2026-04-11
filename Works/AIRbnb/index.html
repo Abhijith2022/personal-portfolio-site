@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb Redesign</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                Airbnb-Beta
+            </div>
+
+            <div class="header-icons">
+                <div><i class="fa-solid fa-house fa-2x" style="color:#ff385c"></i><span class="HeaderText">Home</span>
+                </div>
+                <div><i class="fa-solid fa-user fa-2x" style="color:#ff385c"></i><span class="HeaderText">Profile</span>
+                </div>
+                <div><i class="fa-solid fa-bell fa-2x" style="color:#ff385c"></i><span
+                        class="HeaderText">Notifications</span></div>
+
+            </div>
+
+            <!-- <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search places">
+                <button class="search-btn">🔍</button>
+            </div> -->
+
+            <div class="menu">
+                <span>Become a host</span>
+                <span><i class="fa-solid fa-globe fa-xl"></i></span>
+                <span><i class="fa-solid fa-bars fa-xl"></i></span>
+            </div>
+
+        </div>
+        <div class="search-container">
+
+            <div class="search-item">
+                <span class="label">Where</span>
+                <input type="text" placeholder="Search destinations">
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="search-item">
+                <span class="label"> Add date</span>
+                <input type="text" placeholder="Add dates">
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="search-item">
+                <span class="label">Guests</span>
+                <input type="text" placeholder="Add guests">
+            </div>
+
+            <button class="search-btn" id="searchBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+        </div>
+
+
+        <!-- Guest Panel     -->
+        <div class="guest-panel" id="guestPanel">
+
+            <div class="guest-row">
+                <div>
+                    <strong>Adults</strong>
+                    <p>Ages 13 or above</p>
+                </div>
+
+                <div class="counter">
+                    <button class="minus" data-type="adult">-</button>
+                    <span id="adultCount">0</span>
+                    <button class="plus" data-type="adult">+</button>
+                </div>
+            </div>
+
+            <div class="guest-row">
+                <div>
+                    <strong>Children</strong>
+                    <p>Ages 2–12</p>
+                </div>
+
+                <div class="counter">
+                    <button class="minus" data-type="child">-</button>
+                    <span id="childCount">0</span>
+                    <button class="plus" data-type="child">+</button>
+                </div>
+            </div>
+
+            <div class="guest-row">
+                <div>
+                    <strong>Infants</strong>
+                    <p>Under 2</p>
+                </div>
+
+                <div class="counter">
+                    <button class="minus" data-type="infant">-</button>
+                    <span id="infantCount">0</span>
+                    <button class="plus" data-type="infant">+</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="destination-panel" id="destinationPanel">
+
+            <div class="destination-row">
+                <span class="icon">🌆</span>
+                <span class="city">New York</span>
+            </div>
+
+            <div class="destination-row">
+                <span class="icon">🗼</span>
+                <span class="city">Paris</span>
+            </div>
+
+            <div class="destination-row">
+                <span class="icon">🗻</span>
+                <span class="city">Tokyo</span>
+            </div>
+
+            <div class="destination-row">
+                <span class="icon">🌉</span>
+                <span class="city">Sydney</span>
+            </div>
+
+            <div class="destination-row">
+                <span class="icon">🏛</span>
+                <span class="city">Rome</span>
+            </div>
+
+        </div>
+
+        <div class="date-panel" id="datePanel">
+
+            <div class="date-row">
+                <span class="icon">📅</span>
+                <span class="date-option">Today</span>
+            </div>
+
+            <div class="date-row">
+                <span class="icon">📅</span>
+                <span class="date-option">Tomorrow</span>
+            </div>
+
+            <div class="date-row">
+                <span class="icon">📆</span>
+                <span class="date-option">This Weekend</span>
+            </div>
+
+            <div class="date-row">
+                <span class="icon">📆</span>
+                <span class="date-option">Next Week</span>
+            </div>
+
+            <div class="date-row">
+                <span class="icon">📍</span>
+                <span class="date-option">Select Specific Date</span>
+            </div>
+
+        </div>
+
+
+        <!-- Guest Panel Ends-->
+
+    </header>
+
+
+    <!-- CATEGORIES -->
+
+    <div class="categories">
+
+        <div class="category">
+            <i class="fa-solid fa-house"></i>
+            <p>Homes</p>
+        </div>
+
+        <div class="category">
+            <i class="fa-solid fa-umbrella-beach"></i>
+            <p>Beach</p>
+        </div>
+
+        <div class="category">
+            <i class="fa-solid fa-mountain"></i>
+            <p>Mountains</p>
+        </div>
+
+        <div class="category">
+            <i class="fa-solid fa-tree"></i>
+            <p>Forest</p>
+        </div>
+
+        <div class="category">
+            <i class="fa-solid fa-water"></i>
+            <p>Lakes</p>
+        </div>
+
+        <div class="category">
+            <i class="fa-solid fa-city"></i>
+            <p>City</p>
+        </div>
+
+        <div class="category">
+            <i class="fa-solid fa-hotel"></i>
+            <p>Luxury</p>
+        </div>
+
+        <div class="category">
+            <i class="fa-solid fa-campground"></i>
+            <p>Camping</p>
+        </div>
+
+        <div class="category">
+            <i class="fa-solid fa-tree-city"></i>
+            <p>Nature</p>
+        </div>
+
+    </div>
+
+
+    <!-- LISTINGS -->
+
+    <div class="container">
+
+        <div class="card-grid">
+
+
+            <div class="card">
+                <img src="https://picsum.photos/400/300?1" loading="lazy">
+                <h3>Modern Villa</h3>
+                <p>Kochi, Kerala</p>
+                <p class="price">₹7,500 night</p>
+            </div>
+
+
+            <div class="card">
+                <img src="https://picsum.photos/400/300?2" loading="lazy">
+                <h3>Beach House</h3>
+                <p>Goa, India</p>
+                <p class="price">₹9,000 night</p>
+            </div>
+
+
+            <div class="card">
+                <img src="https://picsum.photos/400/300?3" loading="lazy">
+                <h3>Mountain Cabin</h3>
+                <p>Manali, India</p>
+                <p class="price">₹6,200 night</p>
+            </div>
+
+
+            <div class="card">
+                <img src="https://picsum.photos/400/300?4" loading="lazy">
+                <h3>Luxury Apartment</h3>
+                <p>Bangalore</p>
+                <p class="price">₹8,500 night</p>
+            </div>
+
+
+            <div class="card">
+                <img src="https://picsum.photos/400/300?5" loading="lazy">
+                <h3>Forest Retreat</h3>
+                <p>Wayanad</p>
+                <p class="price">₹6,800 night</p>
+            </div>
+
+
+            <div class="card">
+                <img src="https://picsum.photos/400/300?6" loading="lazy">
+                <h3>Lake House</h3>
+                <p>Alleppey</p>
+                <p class="price">₹7,200 night</p>
+            </div>
+
+
+            <div class="card">
+                <img src="https://picsum.photos/400/300?7" loading="lazy">
+                <h3>City Studio</h3>
+                <p>Mumbai</p>
+                <p class="price">₹5,900 night</p>
+            </div>
+
+
+            <div class="card">
+                <img src="https://picsum.photos/400/300?8" loading="lazy">
+                <h3>Luxury Resort</h3>
+                <p>Trivandrum</p>
+                <p class="price">₹12,500 night</p>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/400/300?9" loading="lazy">
+                <h3>Forest Retreat agv</h3>
+                <p>kozhikode</p>
+                <p class="price">₹6,800 night</p>
+            </div>
+
+
+            <div class="card">
+                <img src="https://picsum.photos/400/300?10" loading="lazy">
+                <h3>Lake View</h3>
+                <p>Ernakulam</p>
+                <p class="price">₹7,200 night</p>
+            </div>
+
+
+            
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-grid">
+
+            <div>
+                <h4>Support</h4>
+                <p>Help Center</p>
+                <p>Safety information</p>
+                <p>Cancellation options</p>
+            </div>
+
+            <div>
+                <h4>Community</h4>
+                <p>Diversity & Belonging</p>
+                <p>Accessibility</p>
+                <p>Airbnb Associates</p>
+            </div>
+
+            <div>
+                <h4>Hosting</h4>
+                <p>Become a host</p>
+                <p>Host resources</p>
+                <p>Community forum</p>
+            </div>
+
+            <div>
+                <h4>About</h4>
+                <p>Newsroom</p>
+                <p>Careers</p>
+                <p>Investors</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

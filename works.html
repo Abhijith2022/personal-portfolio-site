@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#B8860B">
+  <title>Portfolio - Sample Works</title>
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+  <link href="./style.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body>
+  <!-- Ambient Golden Lighting -->
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
+
+  <header style="background-color: rgba(255, 255, 255, 0.95); box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+    <a href="index.html" class="logo"> Portfolio </a>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <nav id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="index.html#experience">Experience</a>
+      <a href="index.html#Skills">Skills</a>
+      <a href="index.html#Education">Education</a>
+      <a href="works.html" class="active">Sample Works</a>
+      <a href="./CV/RE_SU_ME_2_72.pdf" target="_blank">Download CV</a>
+    </nav>
+  </header>
+
+  <div class="cursor-glow"></div>
+  <div class="cursor-ring"></div>
+
+  <section class="works-page-section" style="padding-top: 12rem;">
+    <h1 class="headingsLabel" style="text-align: center; margin-bottom: 5rem; color: #B8860B;">My Projects & Works</h1>
+
+    <div class="works-gallery">
+      <!-- Work Thumbnails -->
+      <div class="work-card" onclick="openWork('Works/Twohats/index.html')">
+        <img src="images/Worksshowcase/landingpage.png" alt="Work 1 Thumbnail">
+        <button>View Work 1</button>
+      </div>
+
+      <div class="work-card" onclick="openWork('Works/LiptaskTests/index.html')">
+        <img src="images/Worksshowcase/landingpage2.png" alt="Work 2 Thumbnail">
+        <button>View Work 2</button>
+      </div>
+
+      <div class="work-card" onclick="openWork('Works/AIRbnb/index.html')">
+        <img src="images/Worksshowcase/Airbnb.png" alt="Work 3 Thumbnail ">
+        <button>View Work 3</button>
+      </div>
+
+      <div class="work-card" onclick="openWork('Works/Doctask/index.html')">
+        <img src="images/Worksshowcase/landingpage5.png" alt="Work 4 Thumbnail">
+        <button>View Work 4</button>
+      </div>
+    </div>
+
+    <!-- Iframe Viewer -->
+    <div class="iframe-container" id="iframeContainer">
+
+      <div class="iframe-wrapper">
+
+        <div class="iframe-header">
+
+          <a href="#" target="_blank" id="fullScreenBtn" class="fullscreen-btn">
+
+            <i class="fa-solid fa-expand"></i>
+            Full Screen
+
+          </a>
+
+          <button class="close-btn" onclick="closeWork()">
+
+            <i class="fa-solid fa-xmark"></i>
+            Close
+
+          </button>
+
+        </div>
+
+        <iframe id="workIframe" src="" frameborder="0">
+        </iframe>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="figma-designs-section" style="padding: 5rem 9%; background: #FAFAFA; margin-top: 5rem;">
+    <h2 class="headingsLabel" style="text-align: center; margin-bottom: 2rem; color: #B8860B;">UI & Figma Designs</h2>
+    <p style="text-align: center; color: #444; margin-bottom: 4rem; font-size: 1.8rem; font-weight: 500;">
+      A showcase of my recent UI concepts and high-fidelity Figma mockups.
+    </p>
+
+    <div class="figma-gallery">
+      <!-- Placeholder for Figma designs. The user can add their screenshots here -->
+      <div class="figma-card">
+        <div class="figma-img-placeholder">
+          <i class="fa-brands fa-figma"></i>
+          <span>Insert UI Screenshot</span>
+        </div>
+        <div class="figma-info">
+          <h3>UI Concept 1</h3>
+          <p>Sleek and modern user interface design.</p>
+        </div>
+      </div>
+
+      <div class="figma-card">
+        <div class="figma-img-placeholder">
+          <i class="fa-brands fa-figma"></i>
+          <span>Insert UI Screenshot</span>
+        </div>
+        <div class="figma-info">
+          <h3>UI Concept 2</h3>
+          <p>Responsive mobile application mockup.</p>
+        </div>
+      </div>
+
+      <div class="figma-card">
+        <div class="figma-img-placeholder">
+          <i class="fa-brands fa-figma"></i>
+          <span>Insert UI Screenshot</span>
+        </div>
+        <div class="figma-info">
+          <h3>UI Concept 3</h3>
+          <p>Dashboard visualization interface.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="contact-section" id="contact">
+    <footer class="footer">
+      <p>© 2025 Abhijith E.A. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="javascript.js"></script>
+</body>
+
+</html>

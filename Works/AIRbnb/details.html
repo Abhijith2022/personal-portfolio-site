@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Details - Premium Airbnb</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navbar" style="max-width: 1120px;">
+            <a href="index.html" class="logo">
+                <i class="fa-brands fa-airbnb"></i> <span class="logo-text">airbnb</span>
+            </a>
+            
+            <div class="mobile-search" style="display: flex;">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <div style="text-align: left;">
+                    <div style="font-weight: 500;">Start your search</div>
+                    <div style="font-size: 12px; color: var(--text-light); font-weight: 400;">Any week • Add guests</div>
+                </div>
+            </div>
+
+            <div class="user-menu">
+                <div class="host-link">Airbnb your home</div>
+                <div class="globe-icon"><i class="fa-solid fa-globe"></i></div>
+                <div class="profile-dropdown">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-user-circle"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="details-container">
+        <div class="details-title">
+            <h1 id="prop-title">Spectacular Modern Villa with Infinity Pool</h1>
+        </div>
+        <div class="details-meta">
+            <div class="meta-left">
+                <span><i class="fa-solid fa-star"></i> <span id="prop-rating">4.96</span> · 128 reviews</span>
+                <span><i class="fa-solid fa-medal"></i> Superhost</span>
+                <span id="prop-location">Kochi, Kerala, India</span>
+            </div>
+            <div class="meta-right">
+                <span><i class="fa-solid fa-arrow-up-from-bracket"></i> Share</span>
+                <span><i class="fa-regular fa-heart"></i> Save</span>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <img class="gallery-main" id="prop-img-main" src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Main picture">
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Interior 1">
+            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Interior 2">
+            <img src="https://images.unsplash.com/photo-1600566753086-00f18efc2291?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Interior 3">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Interior 4">
+        </div>
+
+        <div class="details-content">
+            <div class="details-main">
+                <div class="host-header">
+                    <div>
+                        <h2>Entire home hosted by Premium Host</h2>
+                        <p>10 guests · 5 bedrooms · 6 beds · 5 baths</p>
+                    </div>
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" class="host-avatar" alt="Host">
+                </div>
+
+                <div class="features-list">
+                    <div class="feature-item">
+                        <i class="fa-solid fa-house"></i>
+                        <div class="feature-text">
+                            <h4>Entire home</h4>
+                            <p>You'll have the space entirely to yourself.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-sparkles"></i>
+                        <div class="feature-text">
+                            <h4>Enhanced Clean</h4>
+                            <p>This host committed to Airbnb's 5-step enhanced cleaning process.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-regular fa-calendar-xmark"></i>
+                        <div class="feature-text">
+                            <h4>Free cancellation before 48 hours</h4>
+                            <p>Get a full refund if you change your mind.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="font-size: 16px; line-height: 1.6; color: var(--text-dark);">
+                    <p>Escape to this stunning property, perfectly positioned to offer breathtaking views. Designed with premium luxury in mind, it features expansive open-plan living spaces, modern architecture, and high-end finishes.</p><br>
+                    <p><b>The space</b><br>
+                    The home is fully equipped with state-of-the-art appliances, a gourmet kitchen, and plush furnishings. The outdoor area includes a barbecue grill, sun loungers, and an alfresco dining area perfect for evening gatherings under the stars.</p>
+                </div>
+            </div>
+
+            <div class="details-sidebar">
+                <div class="booking-widget">
+                    <div class="booking-price">
+                        <span id="prop-price">₹7,500</span> <span> night</span>
+                    </div>
+                    
+                    <div class="booking-inputs">
+                        <div class="date-inputs">
+                            <div class="input-box" onclick="if(this.querySelector('input').showPicker) this.querySelector('input').showPicker();">
+                                <label>Check-in</label>
+                                <input type="date" value="2026-10-18" style="cursor: pointer;">
+                            </div>
+                            <div class="input-box" onclick="if(this.querySelector('input').showPicker) this.querySelector('input').showPicker();">
+                                <label>Checkout</label>
+                                <input type="date" value="2026-10-23" style="cursor: pointer;">
+                            </div>
+                        </div>
+                        <div class="guest-input">
+                            <div class="input-box" style="padding: 0;">
+                                <label>Guests</label>
+                                <input type="text" value="2 guests" readonly style="cursor: pointer; font-weight: 500;">
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <button class="reserve-btn" onclick="alert('Proceeding to checkout animation...')">Reserve</button>
+                    <p class="charge-info">You won't be charged yet</p>
+
+                    <div class="price-breakdown">
+                        <div class="price-row">
+                            <span style="text-decoration: underline;" id="prop-price-calc">₹7,500 x 5 nights</span>
+                            <span id="prop-price-nightly">₹37,500</span>
+                        </div>
+                        <div class="price-row">
+                            <span style="text-decoration: underline;">Cleaning fee</span>
+                            <span>₹2,000</span>
+                        </div>
+                        <div class="price-row">
+                            <span style="text-decoration: underline;">Airbnb service fee</span>
+                            <span>₹4,500</span>
+                        </div>
+                    </div>
+
+                    <div class="price-row total">
+                        <span>Total before taxes</span>
+                        <span id="prop-price-total">₹44,000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Support</h4>
+                <p>Help Center</p>
+                <p>AirCover</p>
+                <p>Anti-discrimination</p>
+                <p>Disability support</p>
+                <p>Cancellation options</p>
+                <p>Report neighborhood concern</p>
+            </div>
+            <div class="footer-col">
+                <h4>Hosting</h4>
+                <p>Airbnb your home</p>
+                <p>AirCover for Hosts</p>
+                <p>Hosting resources</p>
+                <p>Community forum</p>
+                <p>Hosting responsibly</p>
+                <p>Airbnb-friendly apartments</p>
+            </div>
+            <div class="footer-col">
+                <h4>Airbnb</h4>
+                <p>Newsroom</p>
+                <p>New features</p>
+                <p>Careers</p>
+                <p>Investors</p>
+                <p>Gift cards</p>
+                <p>Airbnb.org emergency stays</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">
+                <span>© 2026 Airbnb, Inc.</span>
+                <span>·</span>
+                <span>Terms</span>
+                <span>·</span>
+                <span>Sitemap</span>
+                <span>·</span>
+                <span>Privacy</span>
+            </div>
+            <div class="footer-bottom-right">
+                <span><i class="fa-solid fa-globe"></i> English (IN)</span>
+                <span>₹ INR</span>
+                <span><i class="fa-brands fa-square-facebook"></i></span>
+                <span><i class="fa-brands fa-square-twitter"></i></span>
+                <span><i class="fa-brands fa-square-instagram"></i></span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="details.js"></script>
+</body>
+</html>

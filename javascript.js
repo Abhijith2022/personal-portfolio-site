@@ -33,15 +33,37 @@
       });
     });
   });
+function openWork(url){
 
-    function openWork(url) {
-    document.getElementById("iframeContainer").style.display = "block";
-    document.getElementById("workIframe").src = url;
-    // Optionally scroll to iframe
-    document.getElementById("iframeContainer").scrollIntoView({ behavior: 'smooth' });
-  }
+  const iframeContainer =
+  document.getElementById("iframeContainer");
 
-  function closeWork() {
-    document.getElementById("iframeContainer").style.display = "none";
-    document.getElementById("workIframe").src = "";
-  }
+  const iframe =
+  document.getElementById("workIframe");
+
+  const fullBtn =
+  document.getElementById("fullScreenBtn");
+
+  iframe.src = url;
+
+  fullBtn.href = url;
+
+  iframeContainer.classList.add("active");
+
+  document.body.style.overflow = "hidden";
+}
+
+function closeWork(){
+
+  const iframeContainer =
+  document.getElementById("iframeContainer");
+
+  const iframe =
+  document.getElementById("workIframe");
+
+  iframeContainer.classList.remove("active");
+
+  iframe.src = "";
+
+  document.body.style.overflow = "auto";
+}

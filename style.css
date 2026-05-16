@@ -1215,7 +1215,7 @@ nav a.active {
 }
 
 .figma-info {
-  padding: 2rem;
+  padding: 4rem;
 }
 
 .figma-info h3 {
@@ -1322,6 +1322,9 @@ img {
     gap: 35px;
   }
 
+  .figma-info {
+    padding-top: 8rem;
+  }
 }
 
 @media(max-width:1024px) {
@@ -1361,8 +1364,14 @@ img {
     flex-wrap: wrap;
   }
 
+
 }
 
+@media(max-width:1100px) {
+  .figma-info {
+    padding-top: 8rem;
+  }
+}
 
 /* FULLSCREEN WORK VIEWER */
 
@@ -1486,4 +1495,24 @@ img {
     font-size: 1.2rem;
   }
 
+  .figma-info {
+    padding-top: 8rem;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+
+  .figma-info {
+    padding-top: 15rem;
+  }
+}
+
+@media (max-width: 600px) {
+
+
+  .figma-info {
+    padding-top: 10rem;
+  }
 }
